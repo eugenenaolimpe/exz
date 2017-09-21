@@ -10,6 +10,6 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-        }
+        } // я такой завтра пишу условие  крч и ты всё видишь же, да ?*))) 
     }
 }
