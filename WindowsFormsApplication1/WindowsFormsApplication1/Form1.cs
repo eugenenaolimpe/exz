@@ -15,7 +15,8 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            
+            this.Size = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+
         }
 
         private Size minSize = new Size(400, 400);
