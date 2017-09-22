@@ -15,6 +15,31 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private Size minSize = new Size(400, 400);
+        private bool isIncrease = false;
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            int currentH = this.Size.Height;
+            int currentW = this.Size.Width;
+            if (isIncrease == false)
+            {
+                
+
+
+                Size = new Size((int)(currentW - currentW * 0.1), (int)(currentH - currentH * 0.1));
+            }
+            else
+            {
+                Size = new Size((int)(currentW + currentW * 0.1), (int)(currentH + currentH * 0.1));
+            }
+            if ((this.Size.Height < minSize.Height) && (this.Size.Width < minSize.Width))
+            {
+                isIncrease = true;
+            }
+            
         }
     }
 }
